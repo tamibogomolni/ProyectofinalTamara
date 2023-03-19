@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Tamara Bogomolni</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  	<meta name="theme-color" content="#ffffff">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  	<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+	
+<body>
+
+	<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Dulce Tamara </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarContent">
+			  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" href="index.html">Home</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="productos.html">Productos</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="servicios.html">Nuestros servicios</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="https://walink.co/825d69" target="_blank">Contacto</a>
+					</li>
+			  </ul>
+		  </div>
+	  </div>
+  </nav>
+
+	<main>		
+		
+
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+		  	<div class="offcanvas-header">
+			    <h5 id="offcanvasRightLabel">Carrito de compras</h5>
+			    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		  	</div>
+		  	<div class="offcanvas-body" id="contenedorCarrito">
+		  		
+		  	</div>
+		  	<div class="offcanvas-footer row" id="carritoFooter">
+		  		<button class="btn btn-primary col-12" type="button" id="buyButton">Comprar</button>
+		  		<button class="btn btn-primary col-12" type="button" id="emptyBag">Vaciar carrito</button>
+		  	</div>
+		</div>
+
+		<section id="service-page">
+			<h2>Nuestros servicios</h2>
+			<div class="list-group list-group-center">
+				<div class="card" style="width: 18rem;">
+				  	<img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/528/608/products/d8e946c7-e647-44a4-a984-2e0e2597878c_nube-b6016a3a9f620e45ba16005562098599-1024-1024.jpg" class="card-img-top" alt="Torta Personalizada">
+				  	<div class="card-body">
+				    	<h5 class="card-title">Tortas Personalizadas</h5>
+				    	<p class="card-text">Tene la torta de tus sueños. Contanos como la queres y nosotros la hacemos realidad.</p>
+				    	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calcularServicio" value=¨3¨ id="servicio3">
+						  Calcular Presupuesto
+						</button>
+				  	</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+				  	<img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/528/608/products/pauline-lunch-611-230cd8840bc6aba97b15246596070802-1024-1024.jpg" class="card-img-top" alt="...">
+				  	<div class="card-body">
+				    	<h5 class="card-title">Servicio de Lunch</h5>
+				    	<p class="card-text">Te acompañamos en tus fechas especiales con la mejor oferta en salados.</p>
+				    	<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calcularServicio" value="2" id="servicio2"> 
+						  Calcular Presupuesto
+						</button>
+				  	</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+				  	<img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/528/608/products/whatsapp-image-2018-12-18-at-15-03-031-36a8da4a2f77c177f315451585686690-1024-1024.jpeg" class="card-img-top" alt="Mesa dulce de masas helasdas">
+				  	<div class="card-body">
+				    	<h5 class="card-title">Mesa dulce</h5>
+				    	<p class="card-text">Te acompañamos en tu evento con una amplica carta de dulces.</p>
+				    	<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calcularServicio" value="1" id="servicio1">
+						  Calcular Presupuesto
+						</button>
+				  	</div>
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="calcularServicio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="calcularTortaLabel" aria-hidden="true">
+				  	<div class="modal-dialog">
+				    	<div class="modal-content">
+					      	<div class="modal-header">
+					        	<h5 class="modal-title" id="calcularTortaLabel">Calcular Presupuesto</h5>
+					        	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="borrarContenido()"></button>
+					      	</div>
+					      	<div class="modal-body">
+					        	<div class="mb-3">
+									<label for="inputName1" class="form-label">Nombre</label>	 
+									<input type="name" class="form-control" id="inputName1" required>   
+						  		</div>
+							  	<div class="mb-3">
+									<label for="inputComensales1" class="form-label">¿Servicio para cuantas personas?</label>	 
+									<input type="comensales" class="form-control" id="inputComensales1" required>   
+							  	</div>
+					      	</div>
+					      	<div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#prespuesto" onclick="recopilaInfo()">Calcular</button>
+						        <button type="reset" class="btn btn-primary" onclick="borrarContenido()">Reiniciar</button>
+					      	</div>
+				    	</div>
+					</div>
+				</div>
+				<div class="modal fade" id="prespuesto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="prespuestoLabel" aria-hidden="true">
+				  	<div class="modal-dialog">
+				    	<div class="modal-content">
+					      	<div class="modal-header">
+					        	<h5 class="modal-title" id="calcularTortaLabel">Confirmar pedido</h5>
+					        	<button type="button" class="btn-close btn-second-modal" data-bs-dismiss="modal" aria-label="Close" onclick="borrarContenido()"></button>
+					      	</div>
+					      	<div class="modal-body">
+					        	<div class="mb-3" id="seccionCotizacionPresupuesto">
+						  		</div>
+					      	</div>
+					      	<div class="modal-footer">
+						        <button type="button" class="btn btn-secondary btn-second-modal" data-bs-dismiss="modal" onclick="confirmacionPedido(1)">Confirmar</button>
+						        <button type="button" class="btn btn-primary btn-second-modal" data-bs-dismiss="modal" aria-label="Close" onclick="confirmacionPedido(2)">Cancelar</button>
+						        <button type="button" class="btn btn-primary btn-second-modal" data-bs-dismiss="modal" onclick="confirmacionPedido(3)">Tengo una cosnulta</button>
+					      	</div>
+				    	</div>
+				  	</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<p>Desarrollado por Tamara Bogomolni</p>
+	</footer>
+
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="js/servicios.js"></script>
+
+</body>
+
+</html>
